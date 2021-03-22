@@ -194,6 +194,7 @@ textarea{
 
 .demo__btn{
     margin-top:var(--mb-2);
+    margin-right: .3em;
 }
 
 .secondery-btn:hover {
@@ -749,6 +750,10 @@ video {
         font-size: var(--small-font-size)
     }
 
+    .hid-mobile{
+        display: none; 
+    }
+
     /* Active menu */
     .show-menu {
         top: calc(4.5rem);
@@ -822,6 +827,7 @@ video {
     .demo__btn{
         width: 80%;
         border-radius: 5em;
+        margin-right: 0;
     }
 
     .main-btn{
@@ -1165,7 +1171,7 @@ video {
   .gallery__detail{
     padding: var(--mb-6);  
     background-color: var(--sec-color);
-    overflow-x: scroll;
+    overflow-y: scroll;
   }
 
   .main__gallery div,
@@ -1478,11 +1484,19 @@ video {
   
   
   .panel {
-    padding: 0 18px;
+    padding: 0 1.2em;
     display: none;
     background-color: transparent;
     overflow: hidden;
   }
+
+  .about-blockquote {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    position: relative;
+}
 
 
 
@@ -1530,12 +1544,21 @@ video {
 @media screen and (max-width: 843px){
     .about-mission__container,
     .about-quote,
-    .main__gallery{
+    .about__team
+        {
         display: initial; 
     }
 
     .blockquote {
         height: 300px;
-        background-color: aqua;
     }
+
+    .about-quote {
+        grid-gap: 0em;
+
+    }
+}
+
+@media screen and (max-width: 400px){{
+
 }
