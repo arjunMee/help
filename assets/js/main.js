@@ -1,6 +1,32 @@
 AOS.init();
 
 
+// ===============numer animation=====
+
+function animateValue(id, start, end, duration) {
+  if (start === end) return;
+  var range = end - start;
+  var current = start;
+  var increment = end > start? 1 : -1;
+  var stepTime = Math.abs(Math.floor(duration / range));
+  var obj = document.getElementById(id);
+  var timer = setInterval(function() {
+      current += increment;
+      obj.innerHTML = current;
+      if (current == end) {
+          clearInterval(timer);
+      }
+  }, stepTime);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,6 +75,7 @@ function openCity(evt, cityName) {
 
 // acordion ======== faq dropdown //
 var acc = document.getElementsByClassName("accordion");
+
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -154,3 +181,45 @@ var swiper = new Swiper('.swiper-container3', {
         },
       }
   });
+
+
+  
+
+
+// =================video===========
+function video(){
+  const video = document.getElementById('video');
+  const container = document.querySelector('.video__container');
+  
+  container.addEventListener('click', ()=>{
+    video.style.display = 'block';
+  })
+  video.addEventListener('click', ()=>{
+    video.style.display = 'none';
+  })
+}  
+
+
+
+
+const sections = document.querySelectorAll('section[id]')
+console.log(sections)
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop){
+            
+          animateValue("cities", 0, 3, 2000);
+          animateValue("student", 0, 40, 2000);
+          animateValue("tutor", 0, 25, 2000);
+          animateValue("robotics", 0, 100, 2000);            
+          window.removeEventListener('scroll', scrollActive)
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
