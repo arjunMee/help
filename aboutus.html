@@ -66,7 +66,7 @@
                     <img src="./assets/img/undraw_Team_page_re_cffb.svg" class="robot">
                     <div class="about__content">
                         <div>
-                            <h2 class="main__title" style="font-size: 4rem;"><span>about us</span></h2>
+                            <h2 class="main__title about-title"><span>about us</span></h2>
                             <p>In 2015, our team set off with a burning desire to make learning simple and affordable to everyone. Keeping this thought in mind, we started up with our organization PADHAI HELP PVT.LTD. It was founded by a handful of people with a vision to provide quality and most economical educational solutions at your doorstep. Our vision is to build a system where every child receives personal attention and care so that they can grow into confident and smart adults.</p>
                         </div>
                     </div>
@@ -86,12 +86,12 @@
             <div class="about-quote">
                 <div class="about-blockquote">
                     <blockquote > 
-                        <i style="margin-bottom: 2em;">Man can learn nothing except by going from the known to the unknown.</i>
+                        <i>Man can learn nothing except by going from the known to the unknown.</i>
                         <br>
                         <strong>- Claude Bernard</strong>
                     </blockquote>
-                    <img src="./assets/img/Icon awesome-quote-left.svg" alt="" style="width:50px; position: absolute; top:0; left:0;">
-                    <img src="./assets/img/Icon awesome-quote-right.svg" alt="" style="width:50px; position: absolute; bottom: 0; right:40px;">
+                    <img src="./assets/img/Icon awesome-quote-left.svg" alt="" class="quote__semi__left">
+                    <img src="./assets/img/Icon awesome-quote-right.svg" alt="" class="quote__semi__right">
                 </div>
 
                 <div>
@@ -109,17 +109,17 @@
     <section class="section">
         <div class="bd-container ">
             <div class="about-mission__container">
-                <div style="background-color: #5a5a5a; padding: 3em;">
-                    <h2 style="color: #FFF; font-size: 2rem; text-transform: capitalize; margin-bottom: .5em;">our approach</h2>
+                <div class="about-approch">
+                    <h2 class="about-mission__title">our approach</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem modi optio dignissimos earum eum quo vitae mollitia laboriosam eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at ab error, tempora rerum fuga voluptates ipsam! Quod, tenetur est! distinctio ratione praesentium voluptatum consequatur quod voluptas expedita corporis qui, sint mollitia veritatis. Nostrum molestiae, aliquam repellat laboriosam quam deleniti incidunt.</p>
                 </div>
-                <div style="background-color: #000; padding: 3em;">
-                    <h2 style="color: #FFF; font-size: 2rem; text-transform: capitalize; margin-bottom: .5em;">our mission</h2>
+                <div class="about-mission">
+                    <h2 class="about-mission__title">our mission</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, distinctio ratione praesentium voluptatum consequatur quod voluptas expedita corporis qui, sint mollitia verita.</p>
                 </div>
-                <div class="about-mission3" style="background-color: #C7493A; padding: 3em; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <h2 style="color: #FFF; font-size: 2rem; text-transform: capitalize; margin-bottom: .5em; text-align: center;">Let's Think Togather</h2>
-                    <button class="button secondery-btn demo__btn" style="border:2px solid white; color: white; border-radius: 5em;">contact us</button>
+                <div class="about-mission-contact">
+                    <h2 style="text-align: center;">Let's Think Togather</h2>
+                    <button class="button secondery-btn demo__btn">contact us</button>
                 </div>
             </div>
         </div>
@@ -131,20 +131,20 @@
             <h1 class="main__title heading__center">meet our team</h1>
 
             <div class="team__container">
-                <div class="main__gallery about__team"style="padding:4em 0; grid-gap: 5em;">
+                <div class="main__gallery about__team">
                     <div>
                         <img src="./assets/img/vickiido-brcZCKc5E2Y-unsplash.jpg" alt="" class="main__gallery-img" style="padding:0; ">
-                        <p style="text-transform:uppercase; font-size: 1.4rem; margin-top: .6em;" class="heading__center">alex adwnd</p>
+                        <p class="heading__center team__name">alex adwnd</p>
                         <p style="text-transform:capitalize" class="heading__center">founder</p>
                     </div>
                     <div>
                         <img src="./assets/img/nith-in-w1N1WmLDyHU-unsplash.jpg" alt="" class="main__gallery-img" style="padding:0; ">
-                        <p style="text-transform:uppercase; font-size: 1.4rem; margin-top: .6em;" class="heading__center">alex adwnd</p>
+                        <p class="heading__center team__name">alex adwnd</p>
                         <p style="text-transform:capitalize" class="heading__center">founder</p>
                     </div>
                     <div>
                         <img src="./assets/img/vickiido-brcZCKc5E2Y-unsplash.jpg" alt="" class="main__gallery-img" style="padding:0; ">
-                        <p style="text-transform:uppercase; font-size: 1.4rem; margin-top: .6em;" class="heading__center">alex adwnd</p>
+                        <p class="heading__center team__name">alex adwnd</p>
                         <p style="text-transform:capitalize" class="heading__center">founder</p>
                     </div>
                 </div>
@@ -163,21 +163,23 @@
 
 
         <!-- ===== video section ===== -->
-        <section class="section section__video"  style="background-image: url('./assets/img/call-bg.png');" >
-            <div class="bd-container">
-              
+        <section class="section section__video" data-aos="fade-up" data-aos-duration="3000" style="" >
+            <div class="bd-container ">
                     <div class="video__container">
                         <h1 class="testimonial__title">what our<span> client </span>has to say</h1>
-                        <video width="100%" autoplay muted loop>
-                            <!-- control  -->
-                            <source src="./assets/img/production ID_4065218.mp4" type="video/mp4">
-                            Your browser does not support HTML video.
-                        </video>
-
+                        <div class="video__box">
+                            <div class="videoPic__overLay">
+                                <img src="./assets/img/play-button-svgrepo-com.svg" alt="" class="play__button">
+                            </div>
+                        </div>
                     </div>
-                
             </div>
         </section>
+        <div class="video-youtube" id="video">
+            <div class="video__overLay">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CbNTV-XaKb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 
 
          <!--===== TESTIMONIAL =====-->
@@ -244,7 +246,7 @@
                                 <img src="./assets/img/site_map_algorithm_scheme.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">3</p>
+                                <p class="best__detail"><span id="cities">3</span></p>
                                 <p class="best__icon-text">Cities</p>
                             </div>
                         </div>
@@ -253,7 +255,7 @@
                                 <img  src="./assets/img/Icon material-people-outline.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">40k+</p>
+                                <p class="best__detail"><span id="student">40</span>k+</p>
                                 <p class="best__icon-text">Student</p>
                             </div>
                         </div>
@@ -262,7 +264,7 @@
                                 <img  src="./assets/img/Icon awesome-chalkboard-teacher.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">25k+</p>
+                                <p class="best__detail"><span id="tutor">25</span>k+</p>
                                 <p class="best__icon-text">Tutors</p>
                             </div>
                         </div>
@@ -271,7 +273,7 @@
                                 <img style="color: #5a5a5a;" src="./assets/img/Icon simple-probot.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">100+</p>
+                                <p class="best__detail"><span id="robotics">100</span>+</p>
                                 <p class="best__icon-text">Robotics Lab</p>
                             </div>
                         </div>
@@ -353,6 +355,15 @@
     <!-- <script src="assets/js/gsap.min.js"></script> -->
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        animateValue("cities", 0, 3, 2000);
+        animateValue("student", 0, 40, 2000);
+        animateValue("tutor", 0, 25, 2000);
+        animateValue("robotics", 0, 100, 2000);
+
+        video()
+</script>
 </body>
 
 </html>

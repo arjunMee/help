@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ===== SWIPER CSS ===== -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- ===== BOX ICONS ===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <!-- ===== CSS ===== -->
@@ -16,7 +16,7 @@
     <title>Padhai Help</title>
 </head>
 
-<body>
+<body >
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
             <i class='bx bx-chevron-up scrolltop__icon'></i>
@@ -229,7 +229,7 @@
         </section>
 
         <!--===== TESTIMONIAL =====-->
-        <section class="section" data-aos="fade-up" data-aos-duration="3000">
+        <section id="testimonial" class="section" data-aos="fade-up" data-aos-duration="3000">
             <div class=" bd-container">
                 <div class="testimonial__container">
 
@@ -291,7 +291,7 @@
                                 <img src="./assets/img/site_map_algorithm_scheme.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">3</p>
+                                <p class="best__detail"><span id="cities">3</span></p>
                                 <p class="best__icon-text">Cities</p>
                             </div>
                         </div>
@@ -300,7 +300,7 @@
                                 <img  src="./assets/img/Icon material-people-outline.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">40k+</p>
+                                <p class="best__detail"><span id="student">40</span>k+</p>
                                 <p class="best__icon-text">Student</p>
                             </div>
                         </div>
@@ -309,7 +309,7 @@
                                 <img  src="./assets/img/Icon awesome-chalkboard-teacher.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">25k+</p>
+                                <p class="best__detail"><span id="tutor">25</span>k+</p>
                                 <p class="best__icon-text">Tutors</p>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                                 <img style="color: #5a5a5a;" src="./assets/img/Icon simple-probot.svg" alt="" class="best__icon">
                             </div>
                             <div class="best__content">
-                                <p class="best__detail">100+</p>
+                                <p class="best__detail"><span id="robotics">100</span>+</p>
                                 <p class="best__icon-text">Robotics Lab</p>
                             </div>
                         </div>
@@ -392,21 +392,25 @@
         </section>
 
         <!-- ===== video section ===== -->
-        <section class="section section__video" data-aos="fade-up" data-aos-duration="3000" style="background-image: url('./assets/img/call-bg.png');" >
-            <div class="bd-container">
-              
+        <section class="section section__video" data-aos="fade-up" data-aos-duration="3000">
+            <div class="bd-container ">
                     <div class="video__container">
                         <h1 class="testimonial__title">what our<span> client </span>has to say</h1>
-                        <video width="100%" autoplay muted loop>
-                            <!-- control  -->
-                            <source src="./assets/img/production ID_4065218.mp4" type="video/mp4">
-                            Your browser does not support HTML video.
-                        </video>
-
+                        <div class="video__box">
+                            <div class="videoPic__overLay">
+                                <img src="./assets/img/play-button-svgrepo-com.svg" alt="" class="play__button">
+                            </div>
+                        </div>
                     </div>
-                
             </div>
         </section>
+        <div class="video-youtube" id="video">
+            <div class="video__overLay">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CbNTV-XaKb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        
 
         <!-- ===== trusted bt other===== -->
         <section class="section">
@@ -501,8 +505,6 @@
         </div>
         <p style="text-align: center; color: #e7e5e5;">Copyright © 2020 | <a href='#'>Privacy Policy</a> | <a href='#'>Terms of Service</a></p>
     </footer>
-
-    
     <!-- <script src="assets/js/mixitup.min.js"></script> -->
     <!-- ===== SWIPER JS ===== -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -510,6 +512,12 @@
     <!-- <script src="assets/js/gsap.min.js"></script> -->
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script>
+
+
+        video()
+</script>
+
 </body>
 
 </html>
