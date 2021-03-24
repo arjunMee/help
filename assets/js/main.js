@@ -202,6 +202,11 @@ function video(){
 
 
 
+
+
+
+
+
 const sections = document.querySelectorAll('section[id]')
 console.log(sections)
 function scrollActive(){
