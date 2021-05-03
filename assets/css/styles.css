@@ -783,7 +783,7 @@ textarea{
 @media screen and (max-width:780px) {
     .nav__menu {
         position: absolute;
-        top: -300%;
+        top: -400%;
         left: 0;
         width: 100%;
         padding-top: var(--mb-3);
@@ -1521,7 +1521,6 @@ textarea{
     display: none;
     
   }
-  
   
   .panel {
     padding: 0 1.2em 1.2em 1.2em;

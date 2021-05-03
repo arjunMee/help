@@ -1,402 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SWIPER CSS ===== -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- ===== BOX ICONS ===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Padhai Help</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
-        </a>
-
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
 
     <!--===== HEADER =====-->
     <header class="top-header" id="header">
-        <div class="bd-container top__nav">
-            <div class="top__nav hid-mobile">
-                <div class="nav top__item">
-                    <div class="phone">
-                        <i class='bx bxs-phone'></i>
-                        <p class="phone__text">+92-3434-343-3535</p>
-                    </div>
-                    <div class="top__social">
-                        <i class='bx bxl-twitter'></i>
-                        <i class='bx bxl-youtube'></i>
-                        <i class='bx bxl-facebook-circle'></i>
-                        <i class='bx bxl-instagram-alt'></i>
-                    </div>
-                </div>
+      <div class="bd-container top__nav">
+        <div class="top__nav hid-mobile">
+          <div class="nav top__item">
+            <div class="phone">
+              <i class="bx bxs-phone"></i>
+              <p class="phone__text">+92-3434-343-3535</p>
             </div>
-            <nav class="nav">
-                <a href="#" class="nav__logo"><img src="./assets/img/logo.svg" alt="" class="img__logo"></a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="./index.html" class="nav__link">home</a></li>
-                        <li class="nav__item"><a href="./gallery.html" class="nav__link">gallery</a></li>
-                        <li class="nav__item"><a href="./contactus.html" class="nav__link">contact us</a></li>
-                        <li class="nav__item"><a href="./aboutus.html" class="nav__link">about us</a></li>
-                    </ul>
-                </div>
-                <div class="nav__toggle">
-                    <i class='bx bx-menu' id="nav-toggle"></i>
-                </div>
-            </nav>
+            <div class="top__social">
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram-alt"></i>
+            </div>
+          </div>
         </div>
-</header>
-
-
-
-
-
-<div style="background-color: #d4d4d4;" class="section">
-    <section class="section bd-container contact__wraper">
-        <h2 class="main__title after__line"><span>Contact Us</span></h2>
-        <p style="color:#5a5a5a; margin-bottom: 5em;">Reach Out to Us Any Enquery</p>
-        
-        <div class="contact-container">
-            <div class="contact-form__wraper">
-                <h2 class="main__title contact-form__title">Send us a message</h2>
-                <form class="form" >
-                    <!-- <label for="name">name</label> -->
-                    <input  placeholder="Name" class="input contact-inputBox" id="name" type="text" name="fname"><br>
-                    <!-- <label for="phone">phone</label> -->
-                    <input placeholder="Phone number" class="input contact-inputBox" id="phone" type="text" name="phone"><br>
-                    <!-- <label for="email">email</label> -->
-                    <input placeholder="Email address" class="input contact-inputBox" id="email" type="text"><br>
-                    <!-- <label for="message">message</label> -->
-                    <textarea placeholder="Message" class="textarea contact-inputBox"></textarea>
-                    <input type="submit" value="Submit" class="button form__button contact-form__button">
-                </form>
-            </div>
-    
-            <div class="contact-information__container">
-                <img class="contact-info__svg" src="./assets/img/undraw_my_current_location_om7g.svg" alt="">
-            
-                <h1 class="main__title contact-info__title">contact information</h1>
-                <div class="contact-info__box">
-                    <img src="./assets/img/Icon material-location-on.svg" alt="" class="contact-info__icon">
-                    <div style="margin-left: 2em;">
-                        <p><strong>Location</strong></p>
-                        <p>Borkhera kota,Rajasthan - 243001 INDIA</p>
-                    </div>
-                </div>
-                <div class="contact-info__box">
-                    <img src="./assets/img/Icon material-location-on.svg" alt="" class="contact-info__icon">
-                    <div style="margin-left: 2em;">
-                        <p><strong>Email</strong></p>
-                        <p>Info@padhaihelp.in</p>
-                    </div>
-                </div>
-                <div class="contact-info__box">
-                    <img src="./assets/img/Icon material-location-on.svg" alt="" class="contact-info__icon">
-                    <div class="contact-info__box__child">
-                        <p><strong>Phone</strong></p>
-                        <p>+91 123-123-0123</p>
-                    </div>
-                </div>
-
-                <div >
-                    <div class="top__social" style="color: white;">
-                        <i class='bx bxl-twitter contact-social__svg'></i>
-                        <i class='bx bxl-youtube contact-social__svg'></i>
-                        <i class='bx bxl-facebook-circle contact-social__svg'></i>
-                        <i class='bx bxl-instagram-alt contact-social__svg'></i>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-</div>
-
-
-    <div class="section bd-container contact-faq__container">
-        <p class="heading__center"><span>Frequently Ask Question</span></p>
-        <h2 class="main__title heading__center" style="color:#5a5a5a;">Have any Question ?</h2>
-        
-        <div class="contact-faq__wrap">
-            <ul class="tab">
-                <li><button class="tablinks button_tab" onclick="openCity(event, 'otoo')"><span>OTOO</span></button></li>
-                <li><button class="tablinks button_tab" onclick="openCity(event, 'robotics')"><span>Robotics</span></button></li>
-                <li><button class="tablinks button_tab" onclick="openCity(event, 'atl_lab')"><span>ATL labs</span></button></li>
-                <li><button class="tablinks button_tab" onclick="openCity(event, 'course')"><span>Cousrse</span></button></li>
-                <li><button class="tablinks button_tab" onclick="openCity(event, 'register')"><span>Register</span></button></li>
+        <nav class="nav">
+          <a href="#" class="nav__logo"
+            ><img src="./assets/img/logo.svg" alt="" class="img__logo"
+          /></a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./gallery.html" class="nav__link">gallery</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contactus.html" class="nav__link">contact us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./aboutus.html" class="nav__link">about us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./career.html" class="nav__link">carrer</a>
+              </li>
             </ul>
-        
+          </div>
+          <div class="nav__toggle">
+            <i class="bx bx-menu" id="nav-toggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-          <div id="otoo" class="tabcontent ">
-                <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                     <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-          </div>
-          
-          <div id="robotics" class="tabcontent">
-             <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-          </div>
-          
-          <div id="atl_lab" class="tabcontent">
-             <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                    <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                        <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                         <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
+    <div style="background-color: #d4d4d4" class="section">
+      <section class="section bd-container contact__wraper">
+        <h2 class="main__title after__line"><span>Contact Us</span></h2>
+        <p style="color: #5a5a5a; margin-bottom: 5em">
+          Reach Out to Us Any Enquery
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-form__wraper">
+            <h2 class="main__title contact-form__title">Send us a message</h2>
+            <form class="form">
+              <!-- <label for="name">name</label> -->
+              <input
+                placeholder="Name"
+                class="input contact-inputBox"
+                id="name"
+                type="text"
+                name="fname"
+              /><br />
+              <!-- <label for="phone">phone</label> -->
+              <input
+                placeholder="Phone number"
+                class="input contact-inputBox"
+                id="phone"
+                type="text"
+                name="phone"
+              /><br />
+              <!-- <label for="email">email</label> -->
+              <input
+                placeholder="Email address"
+                class="input contact-inputBox"
+                id="email"
+                type="text"
+              /><br />
+              <!-- <label for="message">message</label> -->
+              <textarea
+                placeholder="Message"
+                class="textarea contact-inputBox"
+              ></textarea>
+              <input
+                type="submit"
+                value="Submit"
+                class="button form__button contact-form__button"
+              />
+            </form>
           </div>
 
-          <div id="course" class="tabcontent">
-             <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-          </div>
-          
-          <div id="register" class="tabcontent">
-             <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                 <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                    <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                        <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
-                         <div class="accodion__wrap">
-                <button class="accordion" >
-                        <p><strong>London is the capital city of England</strong></p>
-                        <i class='bx bx-plus accordion__plus'></i>
-                        <i class='bx bx-minus accordion__minus'></i>
-                </button>
-                <p class="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est, aliquam officiis voluptatum sint atque praesentium temporibus optio in perferendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, tempora.</p> 
-                </div>
+          <div class="contact-information__container">
+            <img
+              class="contact-info__svg"
+              src="./assets/img/undraw_my_current_location_om7g.svg"
+              alt=""
+            />
+
+            <h1 class="main__title contact-info__title">contact information</h1>
+            <div class="contact-info__box">
+              <img
+                src="./assets/img/Icon material-location-on.svg"
+                alt=""
+                class="contact-info__icon"
+              />
+              <div style="margin-left: 2em">
+                <p><strong>Location</strong></p>
+                <p>Borkhera kota,Rajasthan - 243001 INDIA</p>
+              </div>
+            </div>
+            <div class="contact-info__box">
+              <img
+                src="./assets/img/Icon material-location-on.svg"
+                alt=""
+                class="contact-info__icon"
+              />
+              <div style="margin-left: 2em">
+                <p><strong>Email</strong></p>
+                <p>Info@padhaihelp.in</p>
+              </div>
+            </div>
+            <div class="contact-info__box">
+              <img
+                src="./assets/img/Icon material-location-on.svg"
+                alt=""
+                class="contact-info__icon"
+              />
+              <div class="contact-info__box__child">
+                <p><strong>Phone</strong></p>
+                <p>+91 123-123-0123</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="top__social" style="color: white">
+                <i class="bx bxl-twitter contact-social__svg"></i>
+                <i class="bx bxl-youtube contact-social__svg"></i>
+                <i class="bx bxl-facebook-circle contact-social__svg"></i>
+                <i class="bx bxl-instagram-alt contact-social__svg"></i>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
     </div>
 
+    <div class="section bd-container contact-faq__container">
+      <p class="heading__center"><span>Frequently Ask Question</span></p>
+      <h2 class="main__title heading__center" style="color: #5a5a5a">
+        Have any Question ?
+      </h2>
 
-     <!-- ===== footer== ===== -->
-     <footer class="footer__container">
-        <div class="bd-container">
-            <div class="">
-                <div class="footer-grid">
-                    <div class="obj1">
-                        <a href="#" class="footer__logo"><span>Padhai </span><span style="color:#969696;">Help</span></a>
-                        <ul>
-                            <li><span class="footer__head">Quick Link</span></li>
-                            <li><a href="#">Home</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li><a href="#">blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="obj2">
-                        <ul>
-                            <li><span class="footer__head">Quick Link</span></li>
-                            <li><a href="#">Home</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li><a href="#">blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="obj3">
-                        <ul>
-                            <li><span class="footer__head">Quick Link</span></li>
-                            <li><a href="#">Home</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li> <a href="#">Contact us</a></li>
-                            <li><a href="#">blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="obj4 flex__footer">
-                        <div class="">
-                            <ul>
-                                <li><span class="footer__head">Quick Link</span></li>
-                                <li><strong>Phone:</strong> +91 111-333-5665</li>
-                                <li><strong>Phone:</strong> +91 111-333-5665</li>
-                                <li><strong>Email:</strong> info@padhaihelp.in</li>
-                            </ul>
-                            <p class="footer__head" style="margin-top: 2em;">Join our Newsletter</p>
-                            <p>just to keep updated yourself.</p>
-                            <form>
-                                <div class="footer__form">
-                                    <input  type="email" placeholder="Email">
-                                    <input  type="submit" class="main-btn button" value="Submit">
-                                </div>
-                            </form>
-                        </div>
-                        <img src="./assets/img/app-store.png" alt="" style="margin: 2em 0; width: 330px; align-self: flex-start;">
-                    </div>
-                </div>
+      <div class="contact-faq__wrap">
+        <ul class="tab">
+          <li>
+            <button
+              class="tablinks button_tab"
+              onclick="openCity(event, 'otoo')"
+            >
+              <span>OTOO</span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="tablinks button_tab"
+              onclick="openCity(event, 'robotics')"
+            >
+              <span>Robotics</span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="tablinks button_tab"
+              onclick="openCity(event, 'atl_lab')"
+            >
+              <span>ATL labs</span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="tablinks button_tab"
+              onclick="openCity(event, 'course')"
+            >
+              <span>Cousrse</span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="tablinks button_tab"
+              onclick="openCity(event, 'register')"
+            >
+              <span>Register</span>
+            </button>
+          </li>
+        </ul>
+
+        <div id="otoo" class="tabcontent">
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>Lonsssssis the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Loresssm ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Loressm ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>Londssson is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Loress ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>Londssson is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+        </div>
+
+        <div id="robotics" class="tabcontent">
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>Londofffn is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorefffm ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>Londfffon is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorfffem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+        </div>
+
+        <div id="atl_lab" class="tabcontent">
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+        </div>
+
+        <div id="course" class="tabcontent">
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+        </div>
+
+        <div id="register" class="tabcontent">
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+          <div class="accodion__wrap">
+            <button class="accordion">
+              <p><strong>London is the capital city of England</strong></p>
+              <i class="bx bx-plus accordion__plus"></i>
+              <i class="bx bx-minus accordion__minus"></i>
+            </button>
+            <p class="panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              est, aliquam officiis voluptatum sint atque praesentium temporibus
+              optio in perferendis? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Tempore, tempora.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== footer== ===== -->
+    <footer class="footer__container">
+      <div class="bd-container">
+        <div class="">
+          <div class="footer-grid">
+            <div class="obj1">
+              <a href="#" class="footer__logo"
+                ><span>Padhai </span><span style="color: #969696">Help</span></a
+              >
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
             </div>
+            <div class="obj2">
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="obj3">
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="obj4 flex__footer">
+              <div class="">
+                <ul>
+                  <li><span class="footer__head">Quick Link</span></li>
+                  <li><strong>Phone:</strong> +91 111-333-5665</li>
+                  <li><strong>Phone:</strong> +91 111-333-5665</li>
+                  <li><strong>Email:</strong> info@padhaihelp.in</li>
+                </ul>
+                <p class="footer__head" style="margin-top: 2em">
+                  Join our Newsletter
+                </p>
+                <p>just to keep updated yourself.</p>
+                <form>
+                  <div class="footer__form">
+                    <input type="email" placeholder="Email" />
+                    <input
+                      type="submit"
+                      class="main-btn button"
+                      value="Submit"
+                    />
+                  </div>
+                </form>
+              </div>
+              <img
+                src="./assets/img/app-store.png"
+                alt=""
+                style="margin: 2em 0; width: 330px; align-self: flex-start"
+              />
+            </div>
+          </div>
         </div>
-        <hr>
-        <div class="top__social" style="justify-content: center; color: #e7e5e5; margin:1em;">
-            <i class='bx bxl-twitter'></i>
-            <i class='bx bxl-youtube'></i>
-            <i class='bx bxl-facebook-circle'></i>
-            <i class='bx bxl-instagram-alt'></i>
-        </div>
-        <p style="text-align: center; color: #e7e5e5;">Copyright © 2020 | <a href='#'>Privacy Policy</a> | <a href='#'>Terms of Service</a></p>
+      </div>
+      <hr />
+      <div
+        class="top__social"
+        style="justify-content: center; color: #e7e5e5; margin: 1em"
+      >
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-youtube"></i>
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-instagram-alt"></i>
+      </div>
+      <p style="text-align: center; color: #e7e5e5">
+        Copyright © 2020 | <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
     </footer>
 
-    
     <!-- <script src="assets/js/mixitup.min.js"></script> -->
     <!-- ===== SWIPER JS ===== -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -404,6 +616,5 @@
     <!-- <script src="assets/js/gsap.min.js"></script> -->
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>

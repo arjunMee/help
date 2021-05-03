@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== SWIPER CSS ===== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <style>
+      #career li,
+      .career-info a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .career-info {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .tab {
+        border-top: 1px solid #d8d8d8;
+        font-weight: 700;
+        border-bottom: none !important;
+        margin: 20px 0;
+        padding-top: 20px;
+        color: #232c3b;
+        cursor: pointer;
+      }
+
+      .tab p {
+        font-size: 1.4rem;
+      }
+
+      .tab-link {
+        color: #9d0c0c;
+      }
+
+      .tab-link:hover {
+        color: #fa1a1a;
+      }
+
+      .career-info div:last-child {
+        font-weight: 400;
+        color: #232c3b;
+      }
+
+      @media screen and (max-width: 620px) {
+        .career-info a {
+          flex-direction: column;
+          /* justify-content: flex-start; */
+          margin: 10px 0;
+        }
+
+        .tab p {
+          font-size: 16px;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    </style>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Padhai Help</title>
+  </head>
+
+  <body>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--===== HEADER =====-->
+    <header class="top-header" id="header">
+      <div class="bd-container top__nav">
+        <div class="top__nav hid-mobile">
+          <div class="nav top__item">
+            <div class="phone">
+              <i class="bx bxs-phone"></i>
+              <p class="phone__text">+92-3434-343-3535</p>
+            </div>
+            <div class="top__social">
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram-alt"></i>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__logo"
+            ><img src="./assets/img/logo.svg" alt="" class="img__logo"
+          /></a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./gallery.html" class="nav__link">gallery</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contactus.html" class="nav__link">contact us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./aboutus.html" class="nav__link">about us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./career.html" class="nav__link">carrer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__toggle">
+            <i class="bx bx-menu" id="nav-toggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section bd-container">
+      <div class="heading__center">
+        <h1>Join Our Team</h1>
+        <h3>
+          If you’re passionate and ready to dive in, we’d love to meet you.
+        </h3>
+      </div>
+      <div style="padding: 1rem">
+        <ul id="career" style="text-transform: capitalize">
+          <li class="tab">
+            <p>Business Development and Partnerships (4)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Content (1)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Corporate Communications (3)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Customer Success (27)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Engineering and Data (57)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Finance (13)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Global Customer Operations (2)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Human Resources (11)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Legal (1)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Marketing (19)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>New Ventures (4)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+          <li class="tab">
+            <p>Revenue Operations (7)</p>
+            <i class="bx bxs-down-arrow"></i>
+          </li>
+          <div class="career-info">
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_black">
+                <div class="tab-link">
+                  Director, Strategic Partnerships (LATAM)
+                </div>
+                <div>São Paulo, Brazil</div>
+              </a>
+            </li>
+          </div>
+          <!--  -->
+        </ul>
+      </div>
+    </main>
+
+    <!-- ===== footer== ===== -->
+    <footer class="footer__container">
+      <div class="bd-container">
+        <div class="">
+          <div class="footer-grid">
+            <div class="obj1">
+              <a href="#" class="footer__logo"
+                ><span>Padhai </span><span style="color: #969696">Help</span></a
+              >
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="obj2">
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="obj3">
+              <ul>
+                <li><span class="footer__head">Quick Link</span></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="obj4 flex__footer">
+              <div class="">
+                <ul>
+                  <li><span class="footer__head">Quick Link</span></li>
+                  <li><strong>Phone:</strong> +91 111-333-5665</li>
+                  <li><strong>Phone:</strong> +91 111-333-5665</li>
+                  <li><strong>Email:</strong> info@padhaihelp.in</li>
+                </ul>
+                <p class="footer__head" style="margin-top: 2em">
+                  Join our Newsletter
+                </p>
+                <p>just to keep updated yourself.</p>
+                <form>
+                  <div class="footer__form">
+                    <input type="email" placeholder="Email" />
+                    <input
+                      type="submit"
+                      class="main-btn button"
+                      value="Submit"
+                    />
+                  </div>
+                </form>
+              </div>
+              <img
+                src="./assets/img/app-store.png"
+                alt=""
+                style="margin: 2em 0; width: 330px; align-self: flex-start"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="top__social"
+        style="justify-content: center; color: #e7e5e5; margin: 1em"
+      >
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-youtube"></i>
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-instagram-alt"></i>
+      </div>
+      <p style="text-align: center; color: #e7e5e5">
+        Copyright © 2020 | <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+
+    <!-- <script src="assets/js/mixitup.min.js"></script> -->
+    <!-- ===== SWIPER JS ===== -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- ===== GSAP ===== -->
+    <!-- <script src="assets/js/gsap.min.js"></script> -->
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script>
+      let carrerTab = document.querySelectorAll('.tab');
+      carrerTab[0].nextElementSibling.classList.add('show');
+      carrerTab.forEach(e => {
+        e.addEventListener('click', function (e) {
+          this.nextElementSibling.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html>
