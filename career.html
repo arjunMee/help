@@ -22,18 +22,14 @@
       }
 
       .career-info {
-        /* display: none; */
         height: 0;
         transform: scaleY(0);
         opacity: 0;
         transition: all 500ms ease-in-out;
         transform-origin: top;
-        /* animation-delay: 300ms; */
-        /* transition: height 1s ease; */
       }
 
       .show {
-        /* display: block; */
         opacity: 1;
         height: 100%;
         transform: scaleY(1);
@@ -711,13 +707,13 @@
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
     <script>
-      let carrerTab = document.querySelectorAll('.tab');
-      carrerTab[0].nextElementSibling.classList.add('show');
-      carrerTab.forEach(e => {
+      let carrerTab = document.querySelectorAll('.tab')
+      carrerTab[0].nextElementSibling.classList.add('show')
+      carrerTab.forEach((e) => {
         e.addEventListener('click', function (e) {
-          this.nextElementSibling.classList.toggle('show');
-        });
-      });
+          this.nextElementSibling.classList.toggle('show')
+        })
+      })
     </script>
   </body>
 </html>
